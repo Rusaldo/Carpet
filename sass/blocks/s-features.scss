@@ -1,0 +1,32 @@
+.features {
+  padding: 3rem 0;
+}
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.features__item {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+.features__icon {
+  min-width: 90px;
+  background: no-repeat 0 10px;
+  &_1 {
+    background-image: url(../img/icon-layers.svg);
+  }
+  &_2 {
+    background-image: url(../img/icon-info.svg);
+  }
+  &_3 {
+    background-image: url(../img/icon-truck.svg);
+  }
+}
+.features__text {
+  color: $text-dark;
+  margin-left: 5%;
+  max-width: 250px;
+}

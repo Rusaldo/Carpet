@@ -1,0 +1,77 @@
+.footer {
+  padding: 5rem 0 8rem;
+}
+.footer__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__company {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer__copy {
+  font-size: 1.6rem;
+  padding-bottom: 5rem;
+  margin-top: 8rem;
+  background: url(../img/icon-lamp.svg) no-repeat 0 100%;
+}
+.footer__heading {
+  width: 100%;
+  position: relative;
+  align-self: flex-start;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: $text-dark;
+  margin-bottom: 7rem;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 58px;
+    height: 2px;
+    background-color: $accent;
+    left: 0;
+    bottom: -3rem;
+  }
+}
+.footer__list {
+  float: left;
+  &:nth-of-type(2) {
+    float: left;
+    margin-left: 6rem;
+  }
+}
+.footer__link {
+  line-height: 2;
+}
+.footer__phone {
+  font-weight: 700;
+  color: $text-dark;
+  padding-left: 30px;
+  background: url(../img/icon-phone.svg) no-repeat 0 7px;
+  margin-bottom: 1rem;
+}
+.footer__social {
+  margin-top: 4rem;
+}
+.social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: opacity .2s;
+  &_1 {
+    background: url(../img/icon-vk.svg) no-repeat center;
+  }
+  &_2{
+    background: url(../img/icon-youtube.svg) no-repeat center;
+  }
+  &:hover, &:focus {
+    opacity: .7
+  }
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}

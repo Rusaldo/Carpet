@@ -1,0 +1,64 @@
+.new {
+  position: relative;
+  padding: 3rem 0 9rem;
+}
+.new__heading {
+  color: $text-dark;
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  padding-left: 8%;
+}
+.new__list {
+  display: flex;
+  justify-content: center;
+}
+.new__item {
+  &:not(:last-child) {
+    margin-right: 2%;
+  }
+}
+.new {
+  .slick-prev {
+    position: absolute;
+    top: -90px;
+    right: 60px;
+    visibility: hidden;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../img/icon-arrow-left.png) no-repeat center;
+      visibility: visible;
+      cursor: pointer;
+    }
+    &:hover:after {
+      background: url(../img/icon-arrow-left-orange.png) no-repeat center;
+    }
+  }
+  .slick-next {
+    position: absolute;
+    top: -90px;
+    right: 10px;
+    visibility: hidden;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../img/icon-arrow-right.png) no-repeat center;
+      visibility: visible;
+      cursor: pointer;
+    }
+    &:hover:after {
+      background: url(../img/icon-arrow-right-orange.png) no-repeat center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  width: 155px;
+  height: 172px;
+}
+.logo__link {
+  display: block;
+}
+.logo__caption {
+  font-family: $font-secondary;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: $text-dark;
+  margin: 1.5rem 0;
+}

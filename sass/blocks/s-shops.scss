@@ -1,0 +1,159 @@
+.shops {
+  padding: 5rem 0;
+}
+.shops__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.shops__features {
+  max-width: 390px;
+  margin-right: 5%;
+  padding-top: 4rem;
+}
+.feature {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 5.5rem;
+  }
+}
+.feature__icon {
+  min-width: 72px;
+  height: 72px;
+  &_1 {
+    text-align: center;
+    color: $accent;
+    font-size: 2rem;
+    strong {
+      display: block;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+  &_2 {
+    background: url(../img/icon-share.svg) no-repeat center;
+  }
+  &_3 {
+    background: url(../img/icon-global.svg) no-repeat center;
+  }
+}
+.feature__text {
+  font-size: 2.1rem;
+  margin-left: 4rem;
+}
+.shops__slider {
+  width: 774px;
+  height: 100%;
+  position: relative;
+  .slick-dots {
+    position: absolute;
+    left: -12rem;
+    top: 4.5rem;
+    li {
+      cursor: pointer;
+    }
+    button {
+      position: relative;
+      visibility: hidden;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: block;
+        visibility: visible;
+        width: 20px;
+        height: 2px;
+        background-color: $text-dark;
+        transition: width .2s;
+        cursor: pointer;
+      }
+    }
+    .slick-active {
+      button:after {
+        width: 58px;
+        background-color: $accent;
+      }
+    }
+  }
+}
+.shops__slide {
+  height: 545px;
+  position: relative;
+  outline: none;
+  background: #ebebeb url(../img/bg-map-1.png) no-repeat center / cover;
+}
+.shops__text {
+  width: 430px;
+  max-width: 430px;
+  min-height: 308px;
+  padding: 3.5rem 4.5rem 3rem 0;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shops__heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: $text-dark;
+}
+.shops__name {
+  margin: 4.5rem 0 2rem;
+  font-weight: 500;
+  color: $text-dark;
+}
+.shops__see-all {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  color: $accent;
+    &:hover, &:focus {
+      color: $text-dark;
+    }
+}
+.shops {
+  .slick-prev {
+    position: absolute;
+    bottom: 45px;
+    right: 70px;
+    visibility: hidden;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../img/icon-arrow-left.png) no-repeat center;
+      visibility: visible;
+      cursor: pointer;
+      z-index: 3;
+    }
+    &:hover:after {
+      background: url(../img/icon-arrow-left-orange.png) no-repeat center;
+    }
+  }
+  .slick-next {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    visibility: hidden;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: url(../img/icon-arrow-right.png) no-repeat center;
+      visibility: visible;
+      cursor: pointer;
+      z-index: 3;
+    }
+    &:hover:after {
+      background: url(../img/icon-arrow-right-orange.png) no-repeat center;
+    }
+  }
+}

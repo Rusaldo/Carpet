@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сеть ковровых магазинов Carpet Trade" />
+  <title>Carpet Trade</title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="header__logo logo">
+        <a href="." class="logo__link">
+          <img src="img/logo.png" alt="Logo" class="logo__img">
+        </a>
+        <p class="logo__caption">сеть <br> ковровых <br> магазинов</p>
+      </div>
+      <nav class="main-nav">
+        <section class="top-links">
+          <ul class="top-links__left">
+            <li class="top-links__contact">
+              <a href="#ask-modal">Задать вопрос</a>
+            </li>
+            <li class="top-links__contact top-links__phone">
+              <a href="tel:+79161401818">+7 916 140 18 18</a>
+            </li>
+            <li class="top-links__contact">
+              <a href="#">Напишите нам</a>
+            </li>
+          </ul>
+          <div class="search">
+            <form class="search__form">
+              <i class="search__icon"></i>
+              <input class="search__input" type="text" placeholder="Найдите свой ковер в нашем магазине">
+              <span class="search__btn"><span>Поиск</span> <button class="search__submit-btn">Найти</button></span>
+            </form>
+          </div>
+          <ul class="top-links__right">
+            <li class="top-links__cart">
+              <span class="top-links__cart-icon">2</span>
+              <a href="#">Корзина</a>
+            </li>
+            <li class="top-links__login">
+              <a href="#">Войти</a>
+            </li>
+          </ul>
+        </section>
+        <section class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item_1">
+              <a href="#" class="menu__link">Каталог ковров</a>
+              <div class="menu__dropdown">
+                <section class="menu__dropdown-list">
+                  <ul>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Популярные (Хит продаж)</a></li>
+                    <li><a href="#">Бюджетные ковры</a></li>
+                    <li><a href="#">Средняя категория</a></li>
+                    <li><a href="#">Элитные ковры</a></li>
+                    <li><a href="#">Ручная работа</a></li>
+                    <li><a href="#">Классический дизайн</a></li>
+                    <li><a href="#">Современный дизайн</a></li>
+                  </ul>
+                </section>
+                <section class="menu__dropdown-list">
+                  <h4>Дизайн</h4>
+                  <ul>
+                    <li><a href="#">Восточная классика</a></li>
+                    <li><a href="#">Европейская классика</a></li>
+                    <li><a href="#">Современная классика</a></li>
+                    <li><a href="#">Этника</a></li>
+                    <li><a href="#">Абстракции</a></li>
+                    <li><a href="#">Длинноворсовые</a></li>
+                    <li><a href="#">Детские</a></li>
+                    <li><a href="#">ДБезворсовые</a></li>
+                  </ul>
+                </section>
+                <section class="menu__dropdown-list">
+                  <h4>Материал</h4>
+                  <ul>
+                    <li><a href="#">Восточная классика</a></li>
+                    <li><a href="#">Европейская классика</a></li>
+                    <li><a href="#">Современная классика</a></li>
+                    <li><a href="#">Этника</a></li>
+                    <li><a href="#">Абстракции</a></li>
+                    <li><a href="#">Длинноворсовые</a></li>
+                    <li><a href="#">Детские</a></li>
+                    <li><a href="#">ДБезворсовые</a></li>
+                  </ul>
+                </section>
+                <section class="menu__dropdown-list">
+                  <h4>Страна-производитель</h4>
+                  <ul>
+                    <li><a href="#">Восточная классика</a></li>
+                    <li><a href="#">Европейская классика</a></li>
+                    <li><a href="#">Современная классика</a></li>
+                    <li><a href="#">Этника</a></li>
+                    <li><a href="#">Абстракции</a></li>
+                    <li><a href="#">Длинноворсовые</a></li>
+                    <li><a href="#">Детские</a></li>
+                    <li><a href="#">ДБезворсовые</a></li>
+                  </ul>
+                </section>
+                <section class="menu__dropdown-list">
+                  <h4>Размер и форма</h4>
+                  <ul>
+                    <li><a href="#">Восточная классика</a></li>
+                    <li><a href="#">Европейская классика</a></li>
+                    <li><a href="#">Современная классика</a></li>
+                    <li><a href="#">Этника</a></li>
+                    <li><a href="#">Абстракции</a></li>
+                    <li><a href="#">Длинноворсовые</a></li>
+                    <li><a href="#">Детские</a></li>
+                    <li><a href="#">ДБезворсовые</a></li>
+                  </ul>
+                </section>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link_1">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Оплата и доставка</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Магазины</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="ask-modal__container modal__container" id="ask-modal">
+        <div class="ask-modal modal">
+          <form class="ask-modal__form modal__form" action="">
+            <h2 class="ask-modal__heading modal__heading">Задать вопрос</h2>
+            <a href="#close" class="modal__close"></a>
+            <input class="ask-modal__input modal__input" type="text" placeholder="Ваше имя">
+            <input class="ask-modal__input modal__input" type="text" placeholder="Электронная почта *" required>
+            <input class="ask-modal__input modal__input" type="text" placeholder="Ваш город *" required>
+            <textarea class="ask-modal__input modal__input" name="name" rows="5" cols="80" placeholder="Комментарий"></textarea>
+            <p class="ask-modal__necessary modal__necessary">* — поля обязательные для заполнения</p>
+            <small class="ask-modal__info modal__info">Нажимая на кнопку отправить, я даю согласие на обработку персональных данных</small>
+            <input class="ask-modal__btn modal__btn btn" type="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__wrapper wrapper">
+        <div class="hero__slider">
+          <section class="hero__slide hero__slide_1">
+            <article class="hero__text">
+              <h2 class="hero__heading">Ковры в гостиную со скидкой 20%</h2>
+              <p class="hero__descr">В сети ковровых магазинов Карпет Трейд действуют скидки до 20% на отдельные коллекции ковров.</p>
+              <a href="#" class="hero__learn-more">Подробнее</a>
+            </article>
+          </section>
+          <section class="hero__slide hero__slide_2">
+            <article class="hero__text">
+              <h2 class="hero__heading">Новейшие модели ковров</h2>
+              <p class="hero__descr">Для дизайнеров интерьеров новое поступление специальных дизайнерских ковров из Турции</p>
+              <a href="#" class="hero__learn-more">Подробнее</a>
+            </article>
+          </section>
+          <section class="hero__slide hero__slide_3">
+            <article class="hero__text">
+              <h2 class="hero__heading">Ковры в гостиную со скидкой 20%</h2>
+              <p class="hero__descr">В сети ковровых магазинов Карпет Трейд действуют скидки до 20% на отдельные коллекции ковров.</p>
+              <a href="#" class="hero__learn-more">Подробнее</a>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="types">
+      <div class="types__wrapper wrapper">
+        <a href="#" class="types__item">
+          <figure class="types__figure">
+            <img src="img/type-1.jpg" alt="Carpet type" class="types__img" width="775" height="385">
+            <figcaption class="types__caption">Классические ковры</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="types__item">
+          <figure class="types__figure">
+            <img src="img/type-2.jpg" alt="Carpet type" class="types__img" width="546" height="385">
+            <figcaption class="types__caption">Современные ковры</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="types__item">
+          <figure class="types__figure">
+            <img src="img/type-3.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+            <figcaption class="types__caption">Шерстяные ковры</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="types__item">
+          <figure class="types__figure">
+            <img src="img/type-4.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+            <figcaption class="types__caption">Ковры из вискозы</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="types__item">
+          <figure class="types__figure">
+            <img src="img/type-5.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+            <figcaption class="types__caption">Ковры из бамбука</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__wrapper wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__icon features__icon_1"></div>
+            <p class="features__text">Подбор оптимального дизайна ковра по фото интерьера</p>
+          </li>
+          <li class="features__item">
+            <div class="features__icon features__icon_2"></div>
+            <p class="features__text">Квалифицированная помощь в выборе онлайн, по телефону, или в наших розничных магазинах</p>
+          </li>
+          <li class="features__item">
+            <div class="features__icon features__icon_3"></div>
+            <p class="features__text">Услуги примерки, доставки, выезда специалиста</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="new">
+      <div class="new__wrapper wrapper">
+        <h2 class="new__heading">Новинки</h2>
+        <ul class="new__list">
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-1.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-2.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-3.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-4.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-5.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-1.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-2.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-3.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-4.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href=".">
+              <figure class="item-card__pic">
+                <img src="img/new-carpet-5.png" alt="New carpet" class="item-card__img">
+              </figure>
+              <h4 class="item-card__name">Кидс</h4>
+              <p class="item-card__price">от 3 600 руб.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="options">
+      <div class="options__wrapper wrapper">
+        <article class="options__card card">
+          <h3 class="options__heading">Выберите свой <br> стиль</h3>
+          <ul class="options__list">
+            <li class="options__item">
+              <a href="#" class="options__link">Восточная классика</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Европейская классика</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Современная классика</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Этника</a>
+            </li>
+          </ul>
+          <ul class="options__list">
+            <li class="options__item">
+              <a href="#" class="options__link">Абстракции</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Длинноворсовые</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Детские</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Безворсовые</a>
+            </li>
+          </ul>
+        </article>
+        <article class="options__card card">
+          <h3 class="options__heading">Выберите свой размер и <br> форму</h3>
+          <ul class="options__list">
+            <li class="options__item">
+              <a href="#" class="options__link">Прикроватные ковры</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Небольшие размеры</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Средние размеры</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Большие размеры</a>
+            </li>
+          </ul>
+          <ul class="options__list">
+            <li class="options__item">
+              <a href="#" class="options__link">Прямоугольник</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Овал</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Круг</a>
+            </li>
+            <li class="options__item">
+              <a href="#" class="options__link">Квадрат</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="shops">
+      <div class="shops__wrapper wrapper">
+        <section class="shops__features">
+          <div class="shops__feature feature">
+            <div class="feature__icon feature__icon_1"><strong>> 10</strong> лет</div>
+            <p class="feature__text">Более 10 лет на <br> рынке</p>
+          </div>
+          <div class="shops__feature feature">
+            <div class="feature__icon feature__icon_2"></div>
+            <p class="feature__text">Постоянно растущая сеть магазинов</p>
+          </div>
+          <div class="shops__feature feature">
+            <div class="feature__icon feature__icon_3"></div>
+            <p class="feature__text">Широкий ассортимент ковров из Турции, Бельгии, Ирана, Индии, Китая, Молдовы, Белоруссии, Украины и России</p>
+          </div>
+        </section>
+        <section class="shops__slider">
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Иваново на Текстильщиках</p>
+              <p class="shops__address">Магазин «Карпет Трейд» в Иваново, ТЦ «Аксон», пр-т Текстильщиков, 80, 2-й эт</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Москва на Каховке</p>
+              <p class="shops__address">Лорем Ипсум на Каховке</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Иваново на Текстильщиках</p>
+              <p class="shops__address">Магазин «Карпет Трейд» в Иваново, ТЦ «Аксон», пр-т Текстильщиков, 80, 2-й эт</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Москва на Каховке</p>
+              <p class="shops__address">Лорем Ипсум на Каховке</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Иваново на Текстильщиках</p>
+              <p class="shops__address">Магазин «Карпет Трейд» в Иваново, ТЦ «Аксон», пр-т Текстильщиков, 80, 2-й эт</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Москва на Каховке</p>
+              <p class="shops__address">Лорем Ипсум на Каховке</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Иваново на Текстильщиках</p>
+              <p class="shops__address">Магазин «Карпет Трейд» в Иваново, ТЦ «Аксон», пр-т Текстильщиков, 80, 2-й эт</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+          <section class="shops__slide">
+            <article class="shops__text">
+              <h3 class="shops__heading">Наши магазины</h3>
+              <p class="shops__name">Москва на Каховке</p>
+              <p class="shops__address">Лорем Ипсум на Каховке</p>
+              <a class="shops__see-all" href="#">Смотреть все</a>
+            </article>
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__wrapper wrapper">
+        <h2 class="blog__heading">Интересное о коврах</h2>
+        <a class="blog__btn btn" href="#">Читать блог</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <section class="footer__company">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.png" alt="Logo" class="logo__img">
+          </a>
+          <p class="logo__caption">сеть <br> ковровых <br> магазинов</p>
+        </div>
+        <a class="footer__copy" href="https://aevrika.ru/services/development/">Разработка и <br> продвижение — «ЭВРИКА»</a>
+      </section>
+      <section class="footer__links">
+        <h3 class="footer__heading">Каталог ковров</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Новинки</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Хит продаж</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Бюджетные ковры</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Элитные</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Ручная работа</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Классический дизайн</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Современный дизайн</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__links">
+        <h3 class="footer__heading">Магазин</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Как выбрать ковер</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Интересное о коврах</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Видео</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Новости и акции</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Отзывы</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">О компании</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Доставка</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Оплата</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Услуги</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link">Магазины</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__contacts">
+        <h3 class="footer__heading">Контакты</h3>
+        <p class="footer__phone"><a href="tel:+79161401818">+7 916 140 18 18</a></p>
+        <p><a href="#">Напишите нам</a></p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link_1"></a>
+            <a href="#" class="social__link social__link_2"></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

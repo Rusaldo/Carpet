@@ -1,0 +1,60 @@
+.options {
+  background: #d5c6b6 url(../img/bg-options.jpg) 100% / cover;
+  height: 566px;
+  padding: 4.5rem;
+}
+.options__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.options__card {
+  background-color: #fff;
+  width: 660px;
+  height: 100%;
+  padding: 7rem 11rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    border: 1px solid #e8e8e8;
+  }
+}
+.options__heading {
+  width: 100%;
+  position: relative;
+  font-size: 3rem;
+  font-weight: 500;
+  color: $text-dark;
+  margin-bottom: 11rem;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 58px;
+    height: 2px;
+    background-color: $accent;
+    left: 0;
+    bottom: -5rem;
+  }
+}
+.options__list {
+  display: inline-block;
+  line-height: 2;
+  font-weight: 400;
+  z-index: 1;
+  &:nth-of-type(1) {
+    margin-right: 2rem;
+  }
+}

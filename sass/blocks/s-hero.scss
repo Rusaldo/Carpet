@@ -1,0 +1,74 @@
+.hero {
+  padding-bottom: 4.5rem;
+}
+.hero__wrapper {
+
+}
+.hero__slider {
+  padding-left: 100px;
+}
+.hero__slide {
+  position: relative;
+  height: 636px;
+  background: no-repeat center / cover;
+  outline: none;
+  &_1 {
+    background-image: url(../img/bg-hero-2.jpg);
+  }
+  &_2 {
+    background-image: url(../img/bg-hero-1.jpg);
+  }
+  &_3 {
+    background-image: url(../img/bg-hero-2.jpg);
+  }
+}
+.hero__text {
+  background: #fff;
+  max-width: 430px;
+  position: absolute;
+  padding: 6rem 4.4rem 3rem 0;
+  left: 0;
+  bottom: 0;
+}
+.hero__heading {
+  color: $text-dark;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.hero__descr {
+  margin: 4.5rem 0;
+  font-size: 2.1rem;
+}
+.hero__slider {
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    li {
+      cursor: pointer;
+    }
+    button {
+      position: relative;
+      visibility: hidden;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: block;
+        visibility: visible;
+        width: 20px;
+        height: 2px;
+        background-color: $text-dark;
+        transition: width .2s;
+        cursor: pointer;
+      }
+    }
+    .slick-active {
+      button:after {
+        width: 58px;
+        background-color: $accent;
+      }
+    }
+  }
+}
