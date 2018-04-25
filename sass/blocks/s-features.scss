@@ -1,32 +1,53 @@
 .features {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .features__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .features__item {
   display: flex;
-  &:not(:last-child) {
-    margin-right: 2rem;
-  }
+  margin: 0 1rem;
 }
 .features__icon {
   min-width: 90px;
-  background: no-repeat 0 10px;
+  min-height: 90px;
   &_1 {
-    background-image: url(../img/icon-layers.svg);
+    background: url(../img/icon-layers.svg) no-repeat 0 10px;
   }
   &_2 {
-    background-image: url(../img/icon-info.svg);
+    background: url(../img/icon-info.svg) no-repeat 0 10px;
   }
   &_3 {
-    background-image: url(../img/icon-truck.svg);
+    background: url(../img/icon-truck.svg) no-repeat 0 10px;
   }
 }
 .features__text {
-  color: $text-dark;
-  margin-left: 5%;
+  padding-left: 5%;
   max-width: 250px;
+  font-weight: 500;
+  color: $text-dark;
+}
+@media screen and (max-width: $tablet) {
+  .features__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .features__icon {
+    margin-bottom: 2rem;
+    background-position: center 10px;
+  }
+}
+@media screen and (max-width: $phone) {
+  .features__list {
+    display: block;
+  }
+  .features__item {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 370px;
+    margin: 0 auto 2rem;
+    text-align: left;
+  }
 }

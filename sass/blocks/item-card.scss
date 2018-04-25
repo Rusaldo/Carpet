@@ -1,6 +1,6 @@
 .item-card {
-  width: 315px;
-  display: inline-block;
+  display: block;
+  // width: 315px;
   outline: none;
   &:hover, &:focus {
     > .item-card__name {
@@ -12,13 +12,12 @@
   }
 }
 .item-card__pic {
-  padding: 4.5rem 5.5rem;
+  padding: 15% 18%;
   text-align: center;
   background-color: #f6f6f6;
-  position: relative;
 }
 .item-card__img {
-  transition: .2s;
+  transition: opacity .2s;
 }
 .item-card__name {
   font-size: 2.1rem;

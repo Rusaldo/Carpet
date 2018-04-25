@@ -54,10 +54,12 @@ a {
 }
 
 @media screen and (max-width: $tablet) {
-
-
+  html {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: $phone) {
-
-
+  .wrapper {
+    width: 90%;
+  }
 }

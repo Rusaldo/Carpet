@@ -1,8 +1,8 @@
 {
-  "name": "template",
+  "name": "Carpet Trade",
   "version": "0.1.0",
   "private": true,
-  "description": "Шаблон для верстки",
+  "description": "Carpet Trade website",
   "devDependencies": {
     "autoprefixer": "7.1.x",
     "browser-sync": "2.18.x",

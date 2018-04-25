@@ -5,11 +5,11 @@
 
 }
 .hero__slider {
-  padding-left: 100px;
+  padding-left: 8%;
 }
 .hero__slide {
-  position: relative;
   height: 636px;
+  position: relative;
   background: no-repeat center / cover;
   outline: none;
   &_1 {
@@ -42,7 +42,7 @@
 .hero__slider {
   .slick-dots {
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 50%;
     li {
       cursor: pointer;
@@ -68,6 +68,59 @@
       button:after {
         width: 58px;
         background-color: $accent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .hero__slide {
+    height: 550px;
+  }
+  .hero__wrapper {
+    width: 100%;
+  }
+  .hero__text {
+    padding: 3rem;
+  }
+  .hero__descr {
+    margin: 2rem 0;
+  }
+  .hero__slider {
+    padding-left: 0;
+  }
+  .hero__slider {
+    .slick-dots {
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: auto;
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+  .hero__learn-more {
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: $phone) {
+  .hero {
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 3rem;
+  }
+  .hero__text {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 100%;
+  }
+  .hero__slider {
+    .slick-dots {
+      background-color: rgba(255, 255, 255, 0.8);
+      button {
+        left: -20px;
       }
     }
   }

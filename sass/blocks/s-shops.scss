@@ -10,15 +10,15 @@
   margin-right: 5%;
   padding-top: 4rem;
 }
-.feature {
+.shops__feature {
   display: flex;
   &:not(:last-child) {
     margin-bottom: 5.5rem;
   }
 }
-.feature__icon {
+.shops__feature-icon {
   min-width: 72px;
-  height: 72px;
+  min-height: 72px;
   &_1 {
     text-align: center;
     color: $accent;
@@ -30,23 +30,23 @@
     }
   }
   &_2 {
-    background: url(../img/icon-share.svg) no-repeat center;
+    background: url(../img/icon-share.svg) no-repeat;
   }
   &_3 {
-    background: url(../img/icon-global.svg) no-repeat center;
+    background: url(../img/icon-global.svg) no-repeat;
   }
 }
-.feature__text {
+.shops__feature-text {
   font-size: 2.1rem;
-  margin-left: 4rem;
+  margin-left: 10%;
 }
 .shops__slider {
-  width: 774px;
-  height: 100%;
+  width: 890px;
+  padding-left: 8%;
   position: relative;
   .slick-dots {
     position: absolute;
-    left: -12rem;
+    left: 0;
     top: 4.5rem;
     li {
       cursor: pointer;
@@ -85,7 +85,6 @@
 .shops__text {
   width: 430px;
   max-width: 430px;
-  min-height: 308px;
   padding: 3.5rem 4.5rem 3rem 0;
   background-color: #fff;
   position: absolute;
@@ -111,7 +110,7 @@
       color: $text-dark;
     }
 }
-.shops {
+.shops__slider {
   .slick-prev {
     position: absolute;
     bottom: 45px;
@@ -155,5 +154,81 @@
     &:hover:after {
       background: url(../img/icon-arrow-right-orange.png) no-repeat center;
     }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .shops__slider {
+    width: 60%;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .shops__wrapper {
+    flex-direction: column;
+  }
+  .shops__features {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .shops__feature {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    margin: 1rem;
+  }
+  .shops__feature-icon {
+    margin-bottom: 2rem;
+  }
+  .shops__feature-text {
+    margin-left: 0;
+  }
+  .shops__slider {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 3rem;
+    .slick-dots {
+      bottom: 2rem;
+      left: 2rem;
+      top: auto;
+    }
+  }
+}
+@media screen and (max-width: $phone) {
+  .shops__features {
+    display: block;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .shops__feature {
+  }
+  .shops__feature-text {
+  }
+  .shops__slider {
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    padding-left: 0;
+    .slick-prev {
+      right: auto;
+      left: 20%;
+    }
+    .slick-next {
+      right: 20%;
+    }
+  }
+  .shops__slide {
+    background: none;
+    height: 400px;
+  }
+  .shops__text {
+    max-width: 100%;
+    width: 100%;
+    min-height: 308px;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
   }
 }

@@ -1,34 +1,22 @@
 .options {
   background: #d5c6b6 url(../img/bg-options.jpg) 100% / cover;
-  height: 566px;
-  padding: 4.5rem;
+  padding: 4.5rem 0;
 }
 .options__wrapper {
   display: flex;
   justify-content: space-between;
-  height: 100%;
 }
 .options__card {
-  background-color: #fff;
   width: 660px;
-  height: 100%;
-  padding: 7rem 11rem;
+  padding: 6rem 7.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: relative;
+  background-color: #fff;
+  border: 15px solid #fff;
+  box-shadow: inset 0px 0px 0px 1px #e8e8e8;
   &:not(:last-child) {
-    margin-right: 3rem;
-  }
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    border: 1px solid #e8e8e8;
+    margin-right: 2.5%;
   }
 }
 .options__heading {
@@ -53,8 +41,37 @@
   display: inline-block;
   line-height: 2;
   font-weight: 400;
-  z-index: 1;
   &:nth-of-type(1) {
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .options__card {
+    padding: 3rem 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .options__list:nth-of-type(1) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: $phone) {
+  .options__wrapper {
+    flex-direction: column;
+  }
+  .options__card {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .options__heading {
+    margin-bottom: 7rem;
+    &:after {
+      bottom: -3rem;
+    }
+  }
+  .options__link {
+    padding: 1rem 0;
   }
 }

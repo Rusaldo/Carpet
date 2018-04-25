@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__wrapper wrapper">
       <div class="header__logo logo">
         <a href="." class="logo__link">
@@ -144,8 +144,8 @@
             <h2 class="ask-modal__heading modal__heading">Задать вопрос</h2>
             <a href="#close" class="modal__close"></a>
             <input class="ask-modal__input modal__input" type="text" placeholder="Ваше имя">
-            <input class="ask-modal__input modal__input" type="text" placeholder="Электронная почта *" required="">
-            <input class="ask-modal__input modal__input" type="text" placeholder="Ваш город *" required="">
+            <input class="ask-modal__input modal__input" type="text" placeholder="Электронная почта *" required>
+            <input class="ask-modal__input modal__input" type="text" placeholder="Ваш город *" required>
             <textarea class="ask-modal__input modal__input" name="name" rows="5" cols="80" placeholder="Комментарий"></textarea>
             <p class="ask-modal__necessary modal__necessary">* — поля обязательные для заполнения</p>
             <small class="ask-modal__info modal__info">Нажимая на кнопку отправить, я даю согласие на обработку персональных данных</small>
@@ -154,7 +154,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
   <main>
     <section class="hero">
       <div class="hero__wrapper wrapper">
@@ -163,21 +163,21 @@
             <article class="hero__text">
               <h2 class="hero__heading">Ковры в гостиную со скидкой 20%</h2>
               <p class="hero__descr">В сети ковровых магазинов Карпет Трейд действуют скидки до 20% на отдельные коллекции ковров.</p>
-              <a href="#" class="hero__learn-more">Подробнее</a>
+              <a class="hero__learn-more" href="#">Подробнее</a>
             </article>
           </section>
           <section class="hero__slide hero__slide_2">
             <article class="hero__text">
               <h2 class="hero__heading">Новейшие модели ковров</h2>
               <p class="hero__descr">Для дизайнеров интерьеров новое поступление специальных дизайнерских ковров из Турции</p>
-              <a href="#" class="hero__learn-more">Подробнее</a>
+              <a class="hero__learn-more" href="#">Подробнее</a>
             </article>
           </section>
           <section class="hero__slide hero__slide_3">
             <article class="hero__text">
-              <h2 class="hero__heading">Ковры в гостиную со скидкой 20%</h2>
-              <p class="hero__descr">В сети ковровых магазинов Карпет Трейд действуют скидки до 20% на отдельные коллекции ковров.</p>
-              <a href="#" class="hero__learn-more">Подробнее</a>
+              <h2 class="hero__heading">Lorem ipsum dolor sit amet.</h2>
+              <p class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi earum, fuga temporibus molestias iste quisquam iusto, dignissimos porro dolorem suscipit.</p>
+              <a class="hero__learn-more" href="#">Подробнее</a>
             </article>
           </section>
         </div>
@@ -185,36 +185,40 @@
     </section>
     <section class="types">
       <div class="types__wrapper wrapper">
-        <a href="#" class="types__item">
-          <figure class="types__figure">
-            <img src="img/type-1.jpg" alt="Carpet type" class="types__img" width="775" height="385">
-            <figcaption class="types__caption">Классические ковры</figcaption>
-          </figure>
-        </a>
-        <a href="#" class="types__item">
-          <figure class="types__figure">
-            <img src="img/type-2.jpg" alt="Carpet type" class="types__img" width="546" height="385">
-            <figcaption class="types__caption">Современные ковры</figcaption>
-          </figure>
-        </a>
-        <a href="#" class="types__item">
-          <figure class="types__figure">
-            <img src="img/type-3.jpg" alt="Carpet type" class="types__img" width="430" height="251">
-            <figcaption class="types__caption">Шерстяные ковры</figcaption>
-          </figure>
-        </a>
-        <a href="#" class="types__item">
-          <figure class="types__figure">
-            <img src="img/type-4.jpg" alt="Carpet type" class="types__img" width="430" height="251">
-            <figcaption class="types__caption">Ковры из вискозы</figcaption>
-          </figure>
-        </a>
-        <a href="#" class="types__item">
-          <figure class="types__figure">
-            <img src="img/type-5.jpg" alt="Carpet type" class="types__img" width="430" height="251">
-            <figcaption class="types__caption">Ковры из бамбука</figcaption>
-          </figure>
-        </a>
+        <div class="types__top-row">
+          <a href="#" class="types__item">
+            <figure class="types__figure">
+              <img src="img/type-1.jpg" alt="Carpet type" class="types__img" width="775" height="385">
+              <figcaption class="types__caption">Классические ковры</figcaption>
+            </figure>
+          </a>
+          <a href="#" class="types__item">
+            <figure class="types__figure">
+              <img src="img/type-2.jpg" alt="Carpet type" class="types__img" width="546" height="385">
+              <figcaption class="types__caption">Современные ковры</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="types__bottom-row">
+          <a href="#" class="types__item">
+            <figure class="types__figure">
+              <img src="img/type-3.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+              <figcaption class="types__caption">Шерстяные ковры</figcaption>
+            </figure>
+          </a>
+          <a href="#" class="types__item">
+            <figure class="types__figure">
+              <img src="img/type-4.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+              <figcaption class="types__caption">Ковры из вискозы</figcaption>
+            </figure>
+          </a>
+          <a href="#" class="types__item">
+            <figure class="types__figure">
+              <img src="img/type-5.jpg" alt="Carpet type" class="types__img" width="430" height="251">
+              <figcaption class="types__caption">Ковры из бамбука</figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -240,90 +244,90 @@
         <h2 class="new__heading">Новинки</h2>
         <ul class="new__list">
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-1.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-1.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-2.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-2.png" alt="New carpet">
+              </figure>
+              <h4 class="item-card__name">Болара</h4>
+              <p class="item-card__price">от 3 375 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href="#">
+              <figure class="item-card__pic">
+                <img class="item-card__img" src="img/new-carpet-3.png" alt="New carpet">
+              </figure>
+              <h4 class="item-card__name">Браво Акрил</h4>
+              <p class="item-card__price">от 1 450 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href="#">
+              <figure class="item-card__pic">
+                <img class="item-card__img" src="img/new-carpet-4.png" alt="New carpet">
+              </figure>
+              <h4 class="item-card__name">Вернисаж</h4>
+              <p class="item-card__price">от 3 290 руб.</p>
+            </a>
+          </li>
+          <li class="new__item">
+            <a class="item-card" href="#">
+              <figure class="item-card__pic">
+                <img class="item-card__img" src="img/new-carpet-5.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-3.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-1.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-4.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-2.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-5.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-3.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-1.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-4.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
             </a>
           </li>
           <li class="new__item">
-            <a class="item-card" href=".">
+            <a class="item-card" href="#">
               <figure class="item-card__pic">
-                <img src="img/new-carpet-2.png" alt="New carpet" class="item-card__img">
-              </figure>
-              <h4 class="item-card__name">Кидс</h4>
-              <p class="item-card__price">от 3 600 руб.</p>
-            </a>
-          </li>
-          <li class="new__item">
-            <a class="item-card" href=".">
-              <figure class="item-card__pic">
-                <img src="img/new-carpet-3.png" alt="New carpet" class="item-card__img">
-              </figure>
-              <h4 class="item-card__name">Кидс</h4>
-              <p class="item-card__price">от 3 600 руб.</p>
-            </a>
-          </li>
-          <li class="new__item">
-            <a class="item-card" href=".">
-              <figure class="item-card__pic">
-                <img src="img/new-carpet-4.png" alt="New carpet" class="item-card__img">
-              </figure>
-              <h4 class="item-card__name">Кидс</h4>
-              <p class="item-card__price">от 3 600 руб.</p>
-            </a>
-          </li>
-          <li class="new__item">
-            <a class="item-card" href=".">
-              <figure class="item-card__pic">
-                <img src="img/new-carpet-5.png" alt="New carpet" class="item-card__img">
+                <img class="item-card__img" src="img/new-carpet-5.png" alt="New carpet">
               </figure>
               <h4 class="item-card__name">Кидс</h4>
               <p class="item-card__price">от 3 600 руб.</p>
@@ -334,7 +338,7 @@
     </section>
     <section class="options">
       <div class="options__wrapper wrapper">
-        <article class="options__card card">
+        <article class="options__card">
           <h3 class="options__heading">Выберите свой <br> стиль</h3>
           <ul class="options__list">
             <li class="options__item">
@@ -365,8 +369,8 @@
             </li>
           </ul>
         </article>
-        <article class="options__card card">
-          <h3 class="options__heading">Выберите свой размер и <br> форму</h3>
+        <article class="options__card">
+          <h3 class="options__heading">Выберите свой размер и форму</h3>
           <ul class="options__list">
             <li class="options__item">
               <a href="#" class="options__link">Прикроватные ковры</a>
@@ -401,17 +405,17 @@
     <section class="shops">
       <div class="shops__wrapper wrapper">
         <section class="shops__features">
-          <div class="shops__feature feature">
-            <div class="feature__icon feature__icon_1"><strong>> 10</strong> лет</div>
-            <p class="feature__text">Более 10 лет на <br> рынке</p>
+          <div class="shops__feature">
+            <div class="shops__feature-icon shops__feature-icon_1"><strong>> 10</strong> лет</div>
+            <p class="shops__feature-text">Более 10 лет на рынке</p>
           </div>
-          <div class="shops__feature feature">
-            <div class="feature__icon feature__icon_2"></div>
-            <p class="feature__text">Постоянно растущая сеть магазинов</p>
+          <div class="shops__feature">
+            <div class="shops__feature-icon shops__feature-icon_2"></div>
+            <p class="shops__feature-text">Постоянно растущая сеть магазинов</p>
           </div>
-          <div class="shops__feature feature">
-            <div class="feature__icon feature__icon_3"></div>
-            <p class="feature__text">Широкий ассортимент ковров из Турции, Бельгии, Ирана, Индии, Китая, Молдовы, Белоруссии, Украины и России</p>
+          <div class="shops__feature">
+            <div class="shops__feature-icon shops__feature-icon_3"></div>
+            <p class="shops__feature-text">Широкий ассортимент ковров из Турции, Бельгии, Ирана, Индии, Китая, Молдовы, Белоруссии, Украины и России</p>
           </div>
         </section>
         <section class="shops__slider">
@@ -492,7 +496,7 @@
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <section class="footer__company">
-        <div class="logo">
+        <div class="footer__logo logo">
           <a href="#" class="logo__link">
             <img src="img/logo.png" alt="Logo" class="logo__img">
           </a>
@@ -528,7 +532,7 @@
       </section>
       <section class="footer__links">
         <h3 class="footer__heading">Магазин</h3>
-        <ul class="footer__list">
+        <ul class="footer__list footer__list_two-columns">
           <li class="footer__list-item">
             <a href="#" class="footer__link">Как выбрать ковер</a>
           </li>
@@ -550,8 +554,6 @@
           <li class="footer__list-item">
             <a href="#" class="footer__link">Контакты</a>
           </li>
-        </ul>
-        <ul class="footer__list">
           <li class="footer__list-item">
             <a href="#" class="footer__link">Доставка</a>
           </li>
@@ -569,16 +571,19 @@
       <section class="footer__contacts">
         <h3 class="footer__heading">Контакты</h3>
         <p class="footer__phone"><a href="tel:+79161401818">+7 916 140 18 18</a></p>
-        <p><a href="#">Напишите нам</a></p>
+        <p><a href="mailto:abc@mail.ru">Напишите нам</a></p>
         <ul class="footer__social social">
           <li class="social__item">
-            <a href="#" class="social__link social__link_1"></a>
-            <a href="#" class="social__link social__link_2"></a>
+            <a class="social__link social__link_1" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_2" href="#"></a>
           </li>
         </ul>
       </section>
     </div>
   </footer>
+  <!-- JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
