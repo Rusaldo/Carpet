@@ -47,10 +47,16 @@
           </ul>
         </section>
         <section class="menu">
-          <button class="menu__toggle">Open</button>
+          <label class="menu__toggle" for="menu__toggle-checkbox">
+            <div class="menu__toggle-line"></div>
+            <div class="menu__toggle-line"></div>
+            <div class="menu__toggle-line"></div>
+          </label>
+          <input type="checkbox" class="menu__toggle-checkbox" id="menu__toggle-checkbox">
           <ul class="menu__list">
-            <li class="menu__item menu__item_1">
+            <li class="menu__item menu__item_with-dropdown">
               <a href="#" class="menu__link">Каталог ковров</a>
+              <input type="checkbox" class="menu__dropdown-toggle" id="menu__dropdown-toggle">
               <div class="menu__dropdown">
                 <section class="menu__dropdown-list">
                   <ul>

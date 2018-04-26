@@ -20,15 +20,15 @@
   }
 }
 .modal {
-  padding: 8rem 11.5rem 10rem;
+  padding: 8rem 7% 10rem;
   background-color: #f6f6f6;
   position: relative;
   max-width: 890px;
 }
 .modal__close {
   position: absolute;
-  top: 5rem;
-  right: 5rem;
+  top: 5%;
+  right: 5%;
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -65,4 +65,10 @@
 }
 .modal__info {
   margin: 3.5rem 0;
+}
+
+@media screen and (max-width: $tablet) {
+  .modal {
+    padding: 5rem 5%;
+  }
 }
