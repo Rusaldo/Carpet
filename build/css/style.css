@@ -529,7 +529,7 @@ a {
   color: #000000; }
 
 .header__logo {
-  margin-right: 6rem;
+  margin-right: 4.5%;
   padding: 3.5rem 0; }
 
 .top-links {
@@ -552,7 +552,8 @@ a {
             align-items: center; }
 
 .top-links__contact {
-  margin-right: 5rem; }
+  white-space: nowrap;
+  margin-right: 13.5%; }
 
 .top-links__phone {
   font-weight: 700;
@@ -565,21 +566,30 @@ a {
   right: 350px;
   height: 100%;
   background-color: #fff; }
-  .search__form {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .search__input {
-    height: 100%;
-    width: 0;
-    border: none;
-    outline: none;
-    -webkit-transition: width .2s;
-    transition: width .2s; }
+
+.search__form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.search__input {
+  height: 100%;
+  width: 0;
+  border: none;
+  outline: none;
+  -webkit-transition: width .2s;
+  transition: width .2s; }
+
+.search__icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2rem;
+  background: url(../img/icon-search.svg) no-repeat center center; }
 
 .search__btn {
   cursor: pointer; }
@@ -607,17 +617,10 @@ a {
   .search_open .search__btn .search__submit-btn {
     display: block; }
 
-.search__icon {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background: url(../img/icon-search.svg) no-repeat center 0px;
-  margin-right: 1rem; }
-
 .top-links__cart {
-  margin-left: 2rem; }
+  white-space: nowrap; }
 
-.top-links__cart-icon {
+.top-links__cart-value {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -631,8 +634,37 @@ a {
 
 .top-links__login {
   background: url(../img/icon-user.svg) no-repeat 0 2px;
-  margin-left: 5rem;
-  padding-left: 30px; }
+  margin-left: 5.5rem;
+  padding-left: 30px;
+  white-space: nowrap; }
+
+@media screen and (max-width: 576px) {
+  .header__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  .header__logo {
+    padding: 0;
+    margin: 2rem auto;
+    height: auto; }
+    .header__logo .logo__caption {
+      display: none; }
+  .menu__toggle {
+    margin: 2rem 0; }
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 10;
+    height: 0; }
+  .menu__link {
+    padding: 1rem 0; }
+  .menu__dropdown {
+    position: static;
+    display: none; } }
 
 .hero {
   padding-bottom: 4.5rem; }
