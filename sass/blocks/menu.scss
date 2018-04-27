@@ -69,8 +69,11 @@
   display: inline-block;
   padding: 2rem;
   cursor: pointer;
-  display: none;
   margin-left: auto;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
 }
 .menu__toggle-line {
   width: 20px;
@@ -83,25 +86,19 @@
 .menu__toggle-checkbox {
   display: none;
 }
-
-@media screen and (max-width: $laptop) {
-
+.menu__dropdown-checkbox {
+  display: none;
+}
+.menu__dropdown-arrow {
+  display: none;
 }
 @media screen and (max-width: $tablet) {
-  .menu {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .menu__link:after {
-    display: none;
-  }
   .menu__list {
     width: 240px;
     display: block;
     position: fixed;
     left: -100%;
     top: 0;
-    bottom: 0;
     overflow: hidden;
     height: 100%;
     background-color: #fff;
@@ -111,15 +108,17 @@
     text-align: left;
     border-right: 1px solid #e8e8e8;
   }
+  .menu__link {
+    padding: 1rem 0;
+    &:after {
+      display: none;
+    }
+  }
   .menu__toggle {
     display: inline-block;
-    margin-left: auto;
   }
   .menu__toggle-checkbox:checked ~ .menu__list {
     left: 0;
-  }
-  .menu__link {
-    padding: 1rem 0;
   }
   .menu__dropdown {
     position: static;
@@ -131,8 +130,50 @@
   .menu__dropdown-list:not(:first-child) {
     display: none;
   }
-  .menu__dropdown-toggle:checked ~ .menu__dropdown {
-    display: block;
+  .menu__dropdown-checkbox:checked {
+    ~ .menu__dropdown {
+      display: block;
+    }
+    ~ .menu__dropdown-arrow {
+      transform: rotate(180deg);
+    }
+  }
+  .menu__dropdown-arrow {
+    display: inline-block;
+    min-width: 25px;
+    min-height: 25px;
+    position: relative;
+    top: 7px;
+    left: 12px;
+    transition: transform .2s;
+    cursor: pointer;
+    &:hover {
+      &:before, &:after {
+        background-color: $accent;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 7px;
+      left: 8px;
+      width: 3px;
+      height: 12px;
+      transform: rotate(-45deg);
+      background-color: $text-dark;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      display: block;
+      width: 3px;
+      height: 12px;
+      transform: rotate(45deg);
+      background-color: $text-dark;
+    }
   }
 }
 @media screen and (max-width: $phone) {
