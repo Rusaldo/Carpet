@@ -31,8 +31,19 @@
           </ul>
           <div class="search">
             <form class="search__form">
-              <i class="search__icon"></i>
-              <input class="search__input" type="text" placeholder="Найдите свой ковер в нашем магазине">
+              <i class="search__icon">
+                <svg width="10.39" height="12.14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <path d="M963.045 51a5.045 5.045 0 1 0 .004 10.093A5.045 5.045 0 0 0 963.043 51zm0 1.431a3.614 3.614 0 1 1 0 7.228 3.614 3.614 0 0 1 0-7.228z" id="a"></path>
+                    <path d="M968.965 62.902l-3.592-3.592 1.012-1.012 3.592 3.592z" id="b"></path>
+                  </defs>
+                  <g transform="translate(-958 -51)">
+                    <use xlink:href="#a"></use>
+                    <use xlink:href="#b"></use>
+                  </g>
+                </svg>
+              </i>
+              <input class="search__input" type="text" placeholder="Найдите свой ковер в нашем магазине" required="">
               <span class="search__btn"><span>Поиск</span> <button class="search__submit-btn">Найти</button></span>
             </form>
           </div>
@@ -146,21 +157,6 @@
           </ul>
         </section>
       </nav>
-      <div class="ask-modal__container modal__container" id="ask-modal">
-        <div class="ask-modal modal">
-          <form class="ask-modal__form modal__form" action="">
-            <h2 class="ask-modal__heading modal__heading">Задать вопрос</h2>
-            <a href="#close" class="modal__close"></a>
-            <input class="ask-modal__input modal__input" type="text" placeholder="Ваше имя">
-            <input class="ask-modal__input modal__input" type="text" placeholder="Электронная почта *" required="">
-            <input class="ask-modal__input modal__input" type="text" placeholder="Ваш город *" required="">
-            <textarea class="ask-modal__input modal__input" name="name" rows="5" cols="80" placeholder="Комментарий"></textarea>
-            <p class="ask-modal__necessary modal__necessary">* — поля обязательные для заполнения</p>
-            <small class="ask-modal__info modal__info">Нажимая на кнопку отправить, я даю согласие на обработку персональных данных</small>
-            <input class="ask-modal__btn modal__btn btn" type="submit">
-          </form>
-        </div>
-      </div>
     </div>
   </header>
   <main>
@@ -591,6 +587,21 @@
       </section>
     </div>
   </footer>
+  <div class="ask-modal__container modal__container" id="ask-modal">
+    <div class="ask-modal modal">
+      <form class="ask-modal__form modal__form" action="">
+        <h2 class="ask-modal__heading modal__heading">Задать вопрос</h2>
+        <a href="#close" class="modal__close"></a>
+        <input class="ask-modal__input modal__input" type="text" placeholder="Ваше имя">
+        <input class="ask-modal__input modal__input" type="text" placeholder="Электронная почта *" required="">
+        <input class="ask-modal__input modal__input" type="text" placeholder="Ваш город *" required="">
+        <textarea class="ask-modal__input modal__input" name="name" rows="5" cols="80" placeholder="Комментарий"></textarea>
+        <p class="ask-modal__necessary modal__necessary">* — поля обязательные для заполнения</p>
+        <small class="ask-modal__info modal__info">Нажимая на кнопку отправить, я даю согласие на обработку персональных данных</small>
+        <input class="ask-modal__btn modal__btn btn" type="submit">
+      </form>
+    </div>
+  </div>
   <!-- JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
