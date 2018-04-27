@@ -1,11 +1,17 @@
 $(document).ready(function(){
+
   // TOP NAV SEARCH FORM
-  $(".search__btn").click(function() {
-    $(".search").addClass("search_open");
-  });
-  $(".search__submit-btn").click(function() {
-    $(".search").removeClass("search_open");
-  });
+  if (window.matchMedia("(min-width: 992px)").matches){
+    $(".search__btn").click(function() {
+      $(".search").toggleClass("search_open");
+    });
+    $(document).click(function(e) {
+      if (!$(e.target).closest(".search").length && !$(e.target).closest(".search-btn").length) {
+        $(".search").removeClass("search_open");
+      }
+    });
+  }
+
   // HERO SECTIION SLIDER
   $('.hero__slider').slick({
     dots: true,
@@ -25,6 +31,7 @@ $(document).ready(function(){
       }
     ]
   });
+
   // NEW CARPETS SECTION SLIDER
   $('.new__list').slick({
     dots: false,
@@ -58,6 +65,7 @@ $(document).ready(function(){
       }
     ]
   });
+
   // SHOPS SECTION SLIDER
   $('.shops__slider').slick({
     dots: true,

@@ -26,7 +26,7 @@
 }
 .menu__dropdown {
   position: absolute;
-  top: 204px;
+  top: 208px;
   left: 0;
   width: 100%;
   background-color: #f6f6f6;
@@ -71,8 +71,8 @@
   cursor: pointer;
   margin-left: auto;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 0;
+  right: 0;
   display: none;
 }
 .menu__toggle-line {
@@ -177,5 +177,8 @@
   }
 }
 @media screen and (max-width: $phone) {
-
+  .menu__toggle {
+    right: 1rem;
+    top: 1rem;
+  }
 }
